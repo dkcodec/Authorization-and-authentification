@@ -1,21 +1,23 @@
 import { removeUser } from "story/slices/UserSlice";
+import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
-import { Navigate } from "react-router";
 import { useAuth } from "hooks/useAuth";
 
 const HomePage = () => {
   const { isAuth, email } = useAuth();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
-  console.log(isAuth);
-  return isAuth ? (
-    <div>
-      <h1>Welcome!</h1>
 
-      <button onClick={dispatch(removeUser())}>Log out from {email}</button>
-    </div>
-  ) : (
-    <Navigate to="/login" />
-  );
+  if (isAuth) {
+    return (
+      <div>
+        <h1>Welcome!</h1>
+        <button onClick={() => dispatch(removeUser())}>
+          Log out from {email}
+        </button>
+      </div>
+    );
+  } else return navigate("/login");
 };
 
 export default HomePage;
