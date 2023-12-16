@@ -1,11 +1,11 @@
-import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import { store } from "story";
+import React from "react";
+import App from "./App";
 import "./index.css";
 import "./firebase";
-import { Provider } from "react-redux";
-import App from "./App";
-import { BrowserRouter } from "react-router-dom";
-import { store } from "story";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
