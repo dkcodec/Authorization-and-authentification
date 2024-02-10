@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Authorization-and-authentification/static/css/main.5dffa35a.css",
+    "main.js": "/Authorization-and-authentification/static/js/main.bd605dd8.js",
+    "index.html": "/Authorization-and-authentification/index.html",
+    "main.5dffa35a.css.map": "/Authorization-and-authentification/static/css/main.5dffa35a.css.map",
+    "main.bd605dd8.js.map": "/Authorization-and-authentification/static/js/main.bd605dd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dffa35a.css",
+    "static/js/main.bd605dd8.js"
+  ]
+}
