@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Form } from "./Form";
 import { setUser } from "story/slices/UserSlice";
 
-const Reg = () => {
+const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -28,4 +28,4 @@ const Reg = () => {
   return <Form title="register" handleClick={handleReg} />;
 };
 
-export { Reg };
+export { Register };

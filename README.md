@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Authentification (React.js + Firebase)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was chosen because I think authorization is a great way to learn React.js, as well as learning how to connect and work with a database.
 
-## Available Scripts
+## What did I do?
 
-In the project directory, you can run:
+### Outline:
 
-### `npm start`
+- Website home page
+- Website login page
+- Website register page
+- Firebase setting
+- Connecting DB with my project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Home page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is the page that appears after logging into your account or after registration (the so-called home page).
 
-### `npm test`
+If you are logged in under the user (for example) ddd@mail.ru, you will see such a page with an option to log out of the account and then redirect to the login page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Home Page](./Project_photos/Home_page.png)
 
-### `npm run build`
+And this is how the page will look like if you just registered under a new user (for example) myproject@gamil.com.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Home Page](./Project_photos/Home_page_After_Registration.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Login Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This page is required to be filled out, as it takes the user to the home page. If there is no such user, he/she will not be able to access the main page.
 
-### `npm run eject`
+It's how this page looks like:
+![Login_Page](./Project_photos/Login_page.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Example with Non-existent user:
+![Login_Page](./Project_photos/Login_page_Non_existent_user.png)
+User not be able to access the main page.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Another example with exist user:
+![Login_Page](./Project_photos/Login_page_filled.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Register page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This page is responsible for the registration of new users, after a person fills out all the fields and clicks "register" he will get to the main page.
 
-## Learn More
+It's how this page looks like:
+![Regiser_page](./Project_photos/Register_page.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+And example with filled forms:
+![Regiser_page_filled](./Project_photos/Register_page_filled.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### NEW SKILLS:
 
-### Code Splitting
+I now have a better understanding of how React, Redux, Js, Firebase, JSX, Hooks work.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Working with JSX components
+- Creacting my own hook
+- Application architecture
+- Work with documentation
 
-### Analyzing the Bundle Size
+### References / links:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [React Docs Eng.](https://react.dev/)
 
-### Making a Progressive Web App
+- [React Docs Rus.](https://reactdev.ru/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Firebase Docs Eng.](https://firebase.google.com/docs)
 
-### Advanced Configuration
+- [Mozilla Docs Eng/Rus](https://developer.mozilla.org/en-US/docs/Web)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Thank you for your attention
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### P.S: Maybe in the near future I will rewrite this code on TS, and also add styles.
